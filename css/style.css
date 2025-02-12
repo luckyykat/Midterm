@@ -7,6 +7,11 @@ body {
     background-color: #121212;
     color: #ffffff;
     text-align: center;
+    /* Background Image */
+    background-image: url('../images/IMG_3311.PNG'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
 
 header {
