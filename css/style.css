@@ -115,6 +115,61 @@ section {
     text-decoration: underline;
 }
 
+/* Apply consistent styling to module images */
+.module-image {
+    width: 300px; /* Set a standard width */
+    height: 200px; /* Set a standard height */
+    object-fit: cover; /* Ensures images keep aspect ratio and fit nicely */
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px; /* Optional: Adds rounded corners */
+}
+
+/* Apply similar card structure as Artifacts */
+.module-card {
+    background: rgba(0, 0, 0, 0.8); /* Dark theme background */
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
+}
+
+.module-card h2 {
+    text-align: center;
+    color: #ffcc00;
+    font-size: 1.5em;
+}
+
+.module-card p {
+    text-align: center;
+    color: #ffffff;
+}
+
+.module-link {
+    display: block;
+    text-align: center;
+    color: #ffcc00;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.module-link:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+/* Ensuring Modules Page Matches Artifacts Theme */
+#modules-section {
+    background: rgba(0, 0, 0, 0.85);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.3);
+}
+
+
+
 footer {
     background-color: #1f1f1f;
     color: white;
