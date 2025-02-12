@@ -82,6 +82,39 @@ section {
     text-decoration: underline;
 }
 
+.artifact {
+    background-color: #1e1e1e;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 8px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.artifact img {
+    width: 150px;
+    border-radius: 5px;
+}
+
+.artifact h3 {
+    color: #f39c12;
+}
+
+.artifact p {
+    color: #ffffff;
+    margin: 5px 0;
+}
+
+.artifact a {
+    color: #00aaff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.artifact a:hover {
+    text-decoration: underline;
+}
+
 footer {
     background-color: #1f1f1f;
     color: white;
