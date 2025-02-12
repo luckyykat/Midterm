@@ -56,7 +56,7 @@ section {
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
 }
 
-/* Artifacts & Modules Styles */
+/* Artifacts & Modules Styling */
 .artifacts-container,
 .modules-container {
     display: flex;
@@ -77,9 +77,10 @@ section {
     color: #fff;
 }
 
+/* Image Sizing Fix */
 .artifact-card img,
 .module-card img {
-    width: 250px;
+    width: 250px; 
     height: auto;
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.2);
@@ -97,4 +98,14 @@ section {
     height: 80px;
     object-fit: cover;
     border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #1f1f1f;
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
