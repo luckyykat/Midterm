@@ -3,35 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page Title</title>
+    <title>Contact - My Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <script>
+        function validateForm() {
+            var name = document.forms["contactForm"]["name"].value;
+            var email = document.forms["contactForm"]["email"].value;
+            var message = document.forms["contactForm"]["message"].value;
+            var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+            if (name == "" || email == "" || message == "") {
+                alert("All fields must be filled out.");
+                return false;
+            }
+
+            if (!emailPattern.test(email)) {
+                alert("Please enter a valid email address.");
+                return false;
+            }
+
+            window.location.href = "thankyou.html";
+            return false;
+        }
+    </script>
 </head>
 <body>
-    <header>
-        <h1>My Portfolio</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="courses.html">Courses</a></li>
-                <li><a href="artifacts.html">Artifacts</a></li>
-                <li><a href="modules.html">Modules</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="creative.html">Creative</a></li>
-                <li><a href="validated.html">Validated</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <main>
-        <section>
-            <h2>Page Title</h2>
-            <p>This is a placeholder text for this page. Update this content accordingly.</p>
-        </section>
-    </main>
-    
-    <footer>
-        <p>&copy; 2025 My Portfolio | <a href="https://validator.w3.org/nu/">Validate HTML</a> | <a href="https://jigsaw.w3.org/css-validator/">Validate CSS</a></p>
-    </footer>
+
+<header>
+    <h1>My Portfolio</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="courses.html">Courses</a></li>
+            <li><a href="artifacts.html">Artifacts</a></li>
+            <li><a href="modules.html">Modules</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="creative.html">Creative</a></li>
+            <li><a href="validated.html">Validated</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <h2>Get in Touch</h2>
+    <p>Feel free to reach out to me by filling out the form below.</p>
+
+    <form name="contactForm" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your Message"></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</main>
+
+<footer>
+    <p>© 2025 My Portfolio | <a href="https://validator.w3.org/">Validate HTML</a> | <a href="https://jigsaw.w3.org/css-validator/">Validate CSS</a></p>
+</footer>
+
 </body>
 </html>
