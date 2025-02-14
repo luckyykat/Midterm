@@ -3,36 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Validated - My Portfolio</title>
+    <title>Validated Pages</title>
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        .validation-container {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            padding: 20px;
-        }
-
-        .validation-column {
-            width: 45%;
-            text-align: center;
-        }
-
-        .validation-column img {
-            width: 100%;
-            max-width: 400px;
-            display: block;
-            margin: 10px auto;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
-        }
-
-        @media (max-width: 768px) {
-            .validation-column {
-                width: 100%;
-            }
-        }
-    </style>
 </head>
 <body>
 
@@ -54,28 +26,29 @@
 
 <main>
     <h2>Validated Pages</h2>
-    <p>Below are the validation results showing that my portfolio pages have 0 errors for both HTML and CSS.</p>
+    <p>Below are the validation results showing that my portfolio pages have **0 errors** for both HTML and CSS.</p>
 
-    <div class="validation-container">
-        <!-- HTML Validation -->
-        <div class="validation-column">
-    <h3>HTML Validation</h3>
-    <p>Each page has been validated with 0 errors.</p>
-    <img src="images/html_index.png" alt="Index Page Validation">
-    <img src="images/html_about.png" alt="About Page Validation">
-    <img src="images/html_contact.png" alt="Contact Page Validation">
-    <img src="images/html_courses.png" alt="Courses Page Validation">
-    <img src="images/html_artifacts.png" alt="Artifacts Page Validation">
-    <img src="images/html_modules.png" alt="Modules Page Validation">
-</div>
+    <section>
+        <h3>HTML Validation</h3>
+        <p>Each page has been validated with 0 errors.</p>
+        <div class="validation-images">
+            <img src="images/html_index.png" alt="Index Page Validation">
+            <img src="images/html_about.png" alt="About Page Validation">
+            <img src="images/html_contact.png" alt="Contact Page Validation">
+            <img src="images/html_courses.png" alt="Courses Page Validation">
+            <img src="images/html_artifacts.png" alt="Artifacts Page Validation">
+            <img src="images/html_modules.png" alt="Modules Page Validation">
+            <img src="images/html_creative.png" alt="Creative Page Validation">
+        </div>
+    </section>
 
-<!-- CSS Validation -->
-<div class="validation-column">
-    <h3>CSS Validation</h3>
-    <p>The CSS file has also been validated with 0 errors.</p>
-    <img src="images/css_validation.png" alt="CSS Validation">
-</div>
-    </div>
+    <section>
+        <h3>CSS Validation</h3>
+        <p>The CSS file has also been validated with 0 errors.</p>
+        <div class="validation-images">
+            <img src="images/css_validation.png" alt="CSS Validation">
+        </div>
+    </section>
 </main>
 
 <footer>
