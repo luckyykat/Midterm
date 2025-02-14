@@ -77,7 +77,7 @@ section {
     color: #fff;
 }
 
-/* Image Sizing Fix */
+/* Image Sizing */
 .artifact-card img,
 .module-card img {
     width: 250px; 
@@ -100,20 +100,76 @@ section {
     border-radius: 5px;
 }
 
-/* CSS for validation images */
-.validation-images {
+
+/* Styling for validation page */
+.validation-container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8); /* Keeps the black theme */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 85%;
+    margin: 20px auto;
+}
+
+/* Layout for Two-Column Validation Section */
+.validation-columns {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     gap: 20px;
 }
 
+/* Each Validation Section */
+.validation-column {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Styling for the Headers */
+.validation-column h3 {
+    text-decoration: underline;
+    color: white;
+}
+
+/* Smaller and Aligned Images */
+.validation-images figure {
+    margin: 10px auto;
+    text-align: center;
+}
+
 .validation-images img {
-    max-width: 100%;
-    height: auto;
-    width: 300px;  /* Adjust size as needed */
-    border-radius: 10px; /* Optional: Adds rounded corners */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2); /* Optional: Adds shadow */
+    width: 100%;
+    max-width: 300px; 
+    border-radius: 8px;
+    display: block;
+    margin: 10px auto;
+}
+
+.validation-images figcaption {
+    font-size: 14px;
+    color: #ccc;
+    margin-top: 5px;
+}
+
+/* CSS Image Style */
+.validation-column img {
+    width: 100%;
+    max-width: 350px;
+    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Footer consistency */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    margin-top: 20px;
 }
 
 /* Footer */
