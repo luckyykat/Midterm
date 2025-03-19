@@ -5,27 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - My Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
-    <script>
-        function validateForm() {
-            var name = document.forms["contactForm"]["name"].value;
-            var email = document.forms["contactForm"]["email"].value;
-            var message = document.forms["contactForm"]["message"].value;
-            var emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-
-            if (name == "" || email == "" || message == "") {
-                alert("All fields must be filled out.");
-                return false;
-            }
-
-            if (!emailPattern.test(email)) {
-                alert("Please enter a valid email address.");
-                return false;
-            }
-
-            window.location.href = "thankyou.html";
-            return false;
-        }
-    </script>
 </head>
 <body>
 
@@ -39,7 +18,7 @@
             <li><a href="artifacts.html">Artifacts</a></li>
             <li><a href="modules.html">Modules</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="creative.html">Portfolio</a></li>
+            <li><a href="creative.html">Gala</a></li>
             <li><a href="validated.html">Validated</a></li>
         </ul>
     </nav>
@@ -49,15 +28,15 @@
     <h2>Get in Touch</h2>
     <p>Feel free to reach out to me by filling out the form below.</p>
 
-    <form name="contactForm" onsubmit="return validateForm()">
+    <form name="contactForm">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" placeholder="Your Name">
+        <input type="text" id="name" name="name" placeholder="Your Name" required aria-label="Name">
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Your Email">
+        <input type="email" id="email" name="email" placeholder="Your Email" required aria-label="Email">
 
         <label for="message">Message:</label>
-        <textarea id="message" name="message" placeholder="Your Message"></textarea>
+        <textarea id="message" name="message" placeholder="Your Message" required aria-label="Message"></textarea>
 
         <button type="submit">Send Message</button>
     </form>
@@ -66,6 +45,9 @@
 <footer>
     <p>© 2025 My Portfolio | <a href="https://validator.w3.org/">Validate HTML</a> | <a href="https://jigsaw.w3.org/css-validator/">Validate CSS</a></p>
 </footer>
+
+<!-- Link to external JavaScript file -->
+<script src="js/contact.js"></script>
 
 </body>
 </html>
